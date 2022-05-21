@@ -298,7 +298,6 @@ namespace WinFormsApp1
                 if (File.Exists($"{tbx_LoadUser.Text.ToUpper()}.json"))
                 {
                     Human? human = JsonSerializer.Deserialize<Human>(File.ReadAllText($"{tbx_LoadUser.Text.ToUpper()}.json"));
-                    tbx_LoadUser.Text = "";
                     tbx_Name.Text = human.Name;
                     tbx_parentname.Text = human.ParentName;
                     tbx_surname.Text = human.Surname;
@@ -322,6 +321,10 @@ namespace WinFormsApp1
 
         }
 
+        private void UserLoader_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

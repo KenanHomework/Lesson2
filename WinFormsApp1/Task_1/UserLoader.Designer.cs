@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gbx_LoadUser = new System.Windows.Forms.GroupBox();
+            this.lbl_LoadUser = new System.Windows.Forms.Label();
             this.btn_Load = new System.Windows.Forms.Button();
             this.tbx_LoadUser = new System.Windows.Forms.TextBox();
             this.gbx_Anket = new System.Windows.Forms.GroupBox();
@@ -51,7 +52,6 @@
             this.lbl_surname = new System.Windows.Forms.Label();
             this.lbl_name = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.Button();
-            this.lbl_LoadUser = new System.Windows.Forms.Label();
             this.gbx_LoadUser.SuspendLayout();
             this.gbx_Anket.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +71,20 @@
             this.gbx_LoadUser.TabIndex = 1;
             this.gbx_LoadUser.TabStop = false;
             this.gbx_LoadUser.Text = "Load User";
+            // 
+            // lbl_LoadUser
+            // 
+            this.lbl_LoadUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_LoadUser.AutoSize = true;
+            this.lbl_LoadUser.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_LoadUser.ForeColor = System.Drawing.Color.White;
+            this.lbl_LoadUser.Location = new System.Drawing.Point(93, 17);
+            this.lbl_LoadUser.Name = "lbl_LoadUser";
+            this.lbl_LoadUser.Size = new System.Drawing.Size(42, 36);
+            this.lbl_LoadUser.TabIndex = 17;
+            this.lbl_LoadUser.Text = "Ad:";
             // 
             // btn_Load
             // 
@@ -398,20 +412,6 @@
             this.btn_back.UseVisualStyleBackColor = false;
             this.btn_back.Click += new System.EventHandler(this.button3_Click);
             // 
-            // lbl_LoadUser
-            // 
-            this.lbl_LoadUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_LoadUser.AutoSize = true;
-            this.lbl_LoadUser.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_LoadUser.ForeColor = System.Drawing.Color.White;
-            this.lbl_LoadUser.Location = new System.Drawing.Point(93, 17);
-            this.lbl_LoadUser.Name = "lbl_LoadUser";
-            this.lbl_LoadUser.Size = new System.Drawing.Size(42, 36);
-            this.lbl_LoadUser.TabIndex = 17;
-            this.lbl_LoadUser.Text = "Ad:";
-            // 
             // UserLoader
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -425,6 +425,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UserLoader";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.UserLoader_Load);
             this.gbx_LoadUser.ResumeLayout(false);
             this.gbx_LoadUser.PerformLayout();
             this.gbx_Anket.ResumeLayout(false);

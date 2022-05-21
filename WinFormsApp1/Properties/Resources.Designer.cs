@@ -61,6 +61,16 @@ namespace WinFormsApp1.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _677713_new_cool_math_backgrounds_1920x1200 {
+            get {
+                object obj = ResourceManager.GetObject("677713-new-cool-math-backgrounds-1920x1200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon destination {
